@@ -1,11 +1,11 @@
-package me.enderaura.commands.permissions;
+package com.matthewhaskett.commands.permissions;
 
 import sx.blah.discord.handle.obj.IMessage;
 import sx.blah.discord.handle.obj.IUser;
 import sx.blah.discord.handle.obj.Permissions;
 
 /**
- * @author Enderaura
+ * @author Matthew Haskett
  * @since 21/03/2018 17:55.
  */
 public class Permission {
@@ -45,7 +45,7 @@ public class Permission {
 
     /**
      * An enum for storing the permission type.
-     * @author Enderaura
+     * @author Matthew Haskett
      * @since 21/03/2018 18:00
      */
     public enum Type {
