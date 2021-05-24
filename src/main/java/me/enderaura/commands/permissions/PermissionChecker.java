@@ -1,10 +1,10 @@
-package me.enderaura.commands.permissions;
+package com.matthewhaskett.commands.permissions;
 
 import sx.blah.discord.handle.obj.IMessage;
 import sx.blah.discord.handle.obj.IUser;
 
 /**
- * @author Enderaura
+ * @author Matthew Haskett
  * @since 21/03/2018 17:54.
  */
 public interface PermissionChecker {
