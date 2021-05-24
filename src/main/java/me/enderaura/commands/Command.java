@@ -1,6 +1,6 @@
-package me.enderaura.commands;
+package com.matthewhaskett.commands;
 
-import me.enderaura.commands.permissions.Permission;
+import com.matthewhaskett.commands.permissions.Permission;
 import sx.blah.discord.handle.obj.IMessage;
 import sx.blah.discord.handle.obj.IUser;
 import sx.blah.discord.util.DiscordException;
@@ -9,7 +9,7 @@ import sx.blah.discord.util.RequestBuffer;
 import java.util.List;
 
 /**
- * @author Enderaura
+ * @author Matthew Haskett
  * @since 21/03/2018 17:28.
  */
 public abstract class Command {
