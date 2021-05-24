@@ -7,29 +7,12 @@ A lightweight framework for creating commands with the Discord4J wrapper of the 
  * Built in permission checking with custom and Discord permissions.
  
 ## Setup
-D4J-Commands is available in my maven repository; add this as a dependency as so:
-```
-<repositories>
-    <repository>
-        <id>enderaura-repo</id>
-        <url>http://repo.enderaura.me/</url>
-    </repository>
-</repositories>
-
-<dependencies>
-    <dependency>
-        <groupId>me.enderaura</groupId>
-        <artifactId>d4j-commands</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </dependency>
-</dependencies>
-```
-_NB: You will have to make sure that this is included in the jar, or make these files available at runtime in another way._
+Add the dependencies to your project.
 
 Once you have added the dependencies, you will need to initialise the framework in your code. The first step to this is creating the `CommandManager` which will be used to register and manage commands.
 
 This can be done as so:
-```
+```java
 private static IDiscordClient client;
 private static CommandManager commandManager;
 
@@ -42,7 +25,6 @@ public static void main(String[] args){
     client.login();
 }
 ```
-_It may be useful to create a getter for the private fields, and also take an approach outside of the main method when loading._
 
 You are now ready to begin using the framework.
 
@@ -50,7 +32,7 @@ You are now ready to begin using the framework.
 A command can be created by simply making a class that extends `Command` and implements the required method (`public void onCommand(IMessage message, IUser sender, List<String> args)`) and has a constructor matching super (`public Command(Permission permission)`).
 
 ```java
-import me.enderaura.commands.Command;
+import com.matthewhaskett.commands.Command;
 
 public class TestCommand extends Command{
     
