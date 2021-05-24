@@ -1,4 +1,4 @@
-package me.enderaura.commands;
+package com.matthewhaskett.commands;
 
 import sx.blah.discord.api.IDiscordClient;
 import sx.blah.discord.api.events.EventSubscriber;
@@ -7,7 +7,7 @@ import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedE
 import java.util.*;
 
 /**
- * @author Enderaura
+ * @author Matthew Haskett
  * @since 21/03/2018 17:26.
  */
 public class CommandManager {
